@@ -1,0 +1,462 @@
+/*GENERAL*/
+
+body{
+    margin-top: -25px;
+    font-family: "Libre Baskerville", sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    padding-bottom: 60px;
+}
+section .heading{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+section .heading h2{
+    text-transform: uppercase;
+}
+.blue-divider{
+    width: 100px;
+    height: 2px;
+    background: #3C7EE8;
+    margin: 0 auto;  
+}
+.white-divider{
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;  
+}
+ul, ol{
+    list-style: none;
+}
+
+/*MENU*/
+
+.navbar{
+    background: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.navbar .navbar-collapse{
+    text-align: center;
+}
+.navbar li a{
+    text-shadow: 1px 1px 1px darkblue;
+    color: #fff !important;
+    margin-left: 20px;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+    color: navy !important;
+    background-color: #FF8C00 !important;
+    transition: all 0.3s ease-in 0s;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+/*ABOUT*/
+
+#about{
+    padding-top: 100px;
+    background: #3C7EE8;
+}
+.profile-picture{
+    text-align: center;
+    margin: 0 auto;
+    filter:drop-shadow(3px 3px 3px);
+}
+#about .heading h1{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+#about .heading h3{
+    color: NAVY;
+    text-shadow: 1px 1px 1px MEDIUMAQUAMARINE;
+}
+.button1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 18px 50px;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in 0s;
+    text-shadow: 1px 1px 1px black;
+}
+.button1:hover{
+    background: #FF8C00;
+    color: navy;
+    text-shadow: 1px 1px 1px white;
+    font-size: 35px;
+    text-decoration-line: none;
+}
+
+/*skills*/
+
+#skills{
+    background: #fff;
+}
+#skills .heading h2{
+    color: #3C7EE8;
+    text-shadow: 1px 1px 1px black;
+}
+#skills .progress{
+    height: 15%;
+    margin: 30px 20px;
+    background: #ddd;
+    text-shadow: 1px 1px 1px black;
+}
+.progress-bar{
+    background-color: #FF8C00;
+    color: navy;
+}
+
+/*EXPERIENCE*/
+
+#experience{
+    background: #3C7EE8;
+}
+#experience .heading h2{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+.timeline{
+    padding: 30px 10px;
+    position: relative;
+}
+.timeline:before{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 5px;
+    background: darkslategrey;
+    left: 50%;
+    margin-left: -2.5px
+}
+.timeline > li{
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline > li:after{
+    clear: both;
+}
+.timeline > li:before, .timeline > li:after{
+    content: " ";
+    display: table;
+}
+.timeline li .timeline-badge{
+    color: navy;
+    width : 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background: #FF8C00;
+    border-radius: 50%
+}
+.timeline-panel-container{
+    width: 50%;
+    float: left;
+}
+.timeline-panel-container-inverted{
+    width: 50%;
+    float: right;
+}
+.timeline-panel{
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px;
+    background: #fff;
+}
+.timeline-panel-container-inverted .timeline-panel{
+    float: left;
+    margin-left: 40px;
+}
+.timeline-panel:after{
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+.timeline-panel-container-inverted .timeline-panel:after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.timeline-heading h3{
+    margin-top: 5px;
+    font-size: 22px;
+}
+.timeline-heading h4{
+    color: #3C7EE8;
+    font-size: 20px
+}
+
+/*ETUDE DIPLOMES*/
+
+#etude{
+    background: #fff,
+}
+#etude .heading h2{
+    color: #3C7EE8;
+    text-shadow: 1px 1px 1px black;
+}
+.etude-block{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px;
+}
+
+.etude-block i{
+    font-size: 40px;
+    margin-bottom: 20px;  
+}
+.etude-block h5{
+    color: navy;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px #3C7EE8;
+    margin-bottom: 15px
+}
+.etude-block h3{
+    color: #3C7EE8;
+    margin-bottom: 15px;
+}
+.etude-block h4{
+    margin-bottom: 20px;
+}
+.etude-block .blue-divider{
+    margin-bottom: 20px
+}
+.etude-block a{
+    text-decoration-line: none;
+}
+
+/*PORTFOLIO*/
+
+#portfolio{
+    background: #3C7EE8;
+}
+#portfolio .heading h2{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 50px;
+}
+#portfolio h3{
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px darkblue;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-align: center;
+}
+#row2{
+    margin-top: 60px;
+}
+#portfolio img{
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px black;
+}
+#portfolio a:hover{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(50%);
+     -webkit-filter: grayscale(100%);
+}
+
+
+/*CONTACT*/
+
+#contact{
+    background: #fff;
+}
+#contact .heading h2{
+    color: #3C7EE8;
+    text-shadow: 1px 1px 1px black;
+}
+#contact-form{
+    font-size: 20px;
+    background: #3C7EE8;
+    padding: 40px;
+    border-radius: 10px;
+}
+.white{
+    color: #fff;
+}
+.form-control{
+    height: 50px;
+    font-size: 18px;
+}
+.comments{
+    font-style: italic;
+    font-size: 12px;
+    color: crimson;
+    height: 25px;
+}
+#contact-form input[type=submit]{
+    margin: 40px auto 0px;
+    display: block;
+}
+.button3{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    color: #3C7EE8;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 18px;
+    transition: all 0.3s ease-in 0s;
+    font-weight: bold;
+}
+.button3:hover{
+    background: #FF8C00;
+    color: navy;
+    text-shadow: 1px 1px 1px white;
+    font-size: 35px;
+}
+.thank-you{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*RECOMMANDATIONS*/
+
+/*
+#recommandations{
+    background: #fff;
+}
+#recommandations .heading h2{
+    color: #3C7EE8;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: auto;
+    font-size: 25px;
+    color: #3C7EE8;
+}
+#myCarousel i:hover{
+    color: #3C7EE8;
+}
+.carousel-indicators{
+    bottom: 0px;
+}
+.carousel-indicators li{
+    border: #3C7EE8;
+}
+.carousel-indicators li .active{
+    background: #3C7EE8;
+}
+#myCarousel .carousel-item{
+    padding: 40px 30px;
+}
+#myCarousel .carousel-item h3{
+    color: #3C7EE8;
+    font-style: italic;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #3C7EE8;
+}
+*/
+
+/*FOOTER*/
+
+footer{
+    background: #333;
+    padding: 20px 0 40px;
+}
+footer i{
+    font-size: 25px;
+    margin: 20px;
+    color: #3C7EE8;
+    height: 30px;
+}
+footer i:hover{
+    font-size: 30px;
+}
+footer h5{
+    color: white;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

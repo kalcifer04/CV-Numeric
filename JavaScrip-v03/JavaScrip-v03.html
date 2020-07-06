@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viwport" content="width=devise-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="https://kit.fontawesome.com/cff644796c.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Wallpoet|Orbitron|Play|Audiowide&display=swap" rel="stylesheet">
+        <title>JavaScript</title>
+    </head>
+    
+
+<body data-spy="scroll" data-target=".navbar">
+        
+        <header id="header">
+            <h1>JavaScript</h1>
+        </header>
+    
+     <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+<!--        <a class="navbar-brand" href="#">Title</a>-->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#monMenu" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+               
+            <div class="collapse navbar-collapse" id="monMenu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#first-party">Console</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#second-party">Où écrire JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#third-party">Syntaxe &amp; variables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fourth-party">Booléans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#five-party">Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#six-party">Boucles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seven-party">Fonctions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eight-party">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nine-party">Objets</a>
+                    </li>
+                </ul>
+            </div></div>
+        </nav>
+
+    <section id="cours">    
+        <section id="first-party">
+            <div class="wrapper">
+                <h2>La console Google Chrome</h2>
+
+                    <p>La console de Google Chrome est un outil développeurs qui nous permet d'exécuter et d'afficher du JavaScript à l'écran.<br>Il y a plusieurs façon d'y acceder :</p>
+
+                        <ul>
+                            <li>Un clic droit sur l'écran et choisir "inspecter éléments"</li>
+                            <li>Aller dans le menu "plus d'outils" et choisir  "outils de développement"</li>
+                            <li>Utiliser le raccourci clavier "ctrl + maj + i"</li>
+                        </ul>
+
+                    <p>Une fois la fenetre ouverte choisir l'onglet console. Afin de visualiser sur notre console certaine valeur on va utiliser dans notre script JS l'instruction :<br><br>console.log(le nom de la (ou les) variables); </p>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="second-party">
+            <div class="wrapper">
+                <h2>Où écrire le JavaScript</h2>
+
+                    <p>Comme pour le CSS on pourrai écrire notre JS sur notre page HTML dans un tag <mark>&lsaquo;script&rsaquo; &lsaquo;/script&rsaquo;</mark>, malheuresement cela deviendrai vite illisible, c'est pourquoi, comme pour le CSS nous allons l'écrire sur un autre fichier qui sera relié à notre page HTML.<br>Donc, dans le dossier ou est contenu notre page HTML nous allons créer un nouveau fichier .txt que nous allons renommer script.js .Nous allons relier ce fichier à notre page HTML en le  mettant dans sont <mark>&lsaquo;head&rsaquo;</mark> comme ceci : <mark>&lsaquo;script src="script.js"&rsaquo;&lsaquo;/script&rsaquo;</mark><br>Ensuite on ouvre ce fichier dans le logiciel qui nous sert à créer notre code, c'est ici que nous écrirons notre JS.</p>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="third-party">
+            <div class="wrapper">
+                <h2>La Syntaxe et les variables</h2>
+
+                    <p>Il est très important d'avoir un code lisible : ça permet de s'y retrouver, et donc d'éviter bon nombre d'erreurs. Pour cela comme pour la plupart des languages on utiliser l'indentation, elle consiste à "décaler" les instructions imbriquées. On utilise l’indentation pour hiérarchiser les instructions en plusieurs niveaux.</p>
+
+                <h3>Les commentaires :</h3>
+
+                    <p>Il existe 2 manières d'écrire des commentaires en JS</p> 
+
+                        <ul>
+                            <li>Sur une seul ligne en commençant par //</li>
+                            <li>Ou en encadrant sur plusieurs ligne son commentaire entre /* et */</li>
+                        </ul>
+
+                    <p>On peut pour aller plus vite utiliser le raccourci <mark>ctrl/</mark> . Encore une fois les commentaires nous servent à rendre notre code plus facilement lisible, pour nous, comme pour les éventuels collègues qui pourraient travailler sur le code avec nous.</p>
+
+                <h3>Les variables :</h3>
+
+                    <p>Les variables servent à stocker des données. Pour créer (on dit déclarer) une variable, on utilise le mot-clé <mark>var</mark>, suivi du nom qu'on veut lui donner. Pour affecter une valeur à cette variable, on utilise le signe <mark>=</mark> . Il est possible d'affecter une valeur à une variable lors de sa déclaration.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p><strong>Déclaration :</strong><br>
+                        var age;<br>
+                        <strong>Affectation :</strong><br>
+                        age = 18;<br>
+                        <strong>Tout en un :</strong><br>
+                        var age = 18;</p>
+                </div>
+
+                    <p>Une variable peut contenir différents types de données. Les nombres comme on vient de le voir ou des chaines de caractères. Une chaine de caractère, c'est... du texte. Les variables affecté de chaine de caractère doivent s'écrire entre guillmets.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var message = "Bonjour, ";</p>
+                </div>
+
+                    <p>On peut grace au signe + , concaténer (mettre bout-à-bout) plusieurs chaine de caractères.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var message = "Bonjour, ";<br>
+                        var Homme = "Monsieur";<br>
+                        var Femme = "Madame";<br><br>
+
+                        console.log(message + Homme)<br>
+                        Cela affichera "Bonjour, Monsieur"<br><br>
+                        console.log(message + Femme)<br>
+                        Cela affichera "Bonjour, Madame"</p>
+                </div>
+
+                    <p>On vient de voir que l'on pouvé ajouter des variables de type chaine de caractère, et on va voir maintenant qu'il est égalment possible d'interagir sur les variables nombres.<br>Il y a 5 opérations de bases :</p> 
+
+                        <ul>
+                            <li>l'addition(+)</li><li>la soustraction(-)</li><li>la multiplication(*)</li><li>la division(/)</li> <li>le modulo (%)(c'est : le reste de la division euclidienne)</li>
+                        </ul>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var x = 12;<br>
+                        var y = 3;<br>
+                        var result = x + y;<br><br>
+
+                        consol.log(result);<br><br>
+                        Cela affichera dans la console 15<br>
+                        De la même manière si l'on avait mis les autres opérateurs le resultat ce serait afficher.</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="fourth-party">
+            <div class="wrapper">
+                <h2>Les Booléans</h2>
+
+                    <p>Nous venons de parler de deux types de variables : les nombres et les chaînes de caractères.
+                    Mais nous allons maintenant avoir besoin d'un troisième type de variables : les booléans. Ces variables ont deux valeurs possibles : <mark>vrai (true)</mark>, ou <mark>faux (false)</mark>.<br><br>On peut obtenir des booléens en comparant des valeurs. En effet, on dispose d'opérateurs de comparaison, qui sont au nombre de 6 :</p>
+
+                        <ul>
+                            <li>L'opérateur d'égalité, <mark>==</mark> (attention, il y a bien deux signes "égal")</li>
+                            <li>L'opérateur de différence, "est différent de", qui se note <mark>!=</mark></li>
+                            <li>L'opérateur "strictement plus grand que", <mark>&rsaquo;</mark></li>
+                            <li>L'opérateur "strictement plus petit que",<mark>&lsaquo;</mark></li>
+                            <li>L'opérateur "plus grand ou égal à", <mark>&rsaquo;=</mark></li>
+                            <li>L'opérateur "plus petit ou égal à", <mark>&lsaquo;=</mark>.</li>
+                        </ul>
+
+                    <p>Nous avons vu qu'on peut additionner ou multiplier des nombres et concaténer des chaînes de caractères.<br>
+                    Eh bien il existe aussi des opérations sur les booléans, au nombre de trois :</p>
+
+                        <ul>
+                            <li>La négation, notée <mark>!</mark> (si a est vrai, !a est faux, et inversement)</li>
+                            <li>Le ET logique, <mark>&amp;&amp;</mark>. On a <mark>(a &amp;&amp; b)</mark> qui est vrai si et seulement si a et b sont vrais</li>
+                            <li>Le OU logique, <mark>||</mark> : <mark>(a || b)</mark> est vrai si et seulement si au moins l'une des deux valeurs est vraie.</li>
+                        </ul>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="five-party">
+            <div class="wrapper">
+                <h2>Les conditions</h2>
+
+                    <p>Une condition est une sorte de « test » afin de vérifier qu'une variable contient bien une certaine valeur. Bien sûr les comparaisons ne se limitent pas aux variables seules, mais pour le moment nous allons nous contenter de ça, ce sera largement suffisant pour commencer. Voici la syntaxe d'une condition. </p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>if(la condition à remplir (booléan))<br>
+                        {<br>
+                        l'ordre à executer<br>
+                        }</p>
+                </div>
+
+                    <p>On peut voir dans l'exemple que notre condition et un booléan, c'est à dire que notre condition répond à la question <mark>(if)</mark> qui veut dire <mark>(si)</mark>, donc si (if) ma condition est vrai alors execute l'ordre coder.<br> Il y a des compléments qui peuvent s'ajouter au si (if), c'est le <mark>(else)</mark> qui veut dire <mark>(ou)</mark>, cela veut dire si (if) ma condition est vrai alors execute l'ordre coder ou (else) execute cette ordre. Cela s'écrit ainsi.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>if(la condition à remplir (booléan))<br>
+                        {<br>
+                        l'ordre à executer<br>
+                        }<br>else<br>
+                        {<br>l'autre ordre à executer<br>
+                        }</p>
+                </div>
+
+                    <p>Il existe un autre complément qui est le <mark>(else if)</mark> qui veut dire <mark>(ou si)</mark>, c'est à dire admettons que ma première condition soit fausse, mais que ma seconde condition est vrai alors execute ce code.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>if(la première condition)<br>
+                        {<br>l'ordre à executer<br>
+                        }<br>
+                        else if(la seconde condition)<br>
+                        {<br>
+                        l'autre ordre à executer<br>
+                        }</p>
+                </div>
+
+                    <p>On peut rassembler les 3 marqueur de condition. Si la première condition et la seconde sont fausse alors dans ce cas execute ce code.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>if(la première condition)<br>
+                        {<br>
+                        l'ordre à executer<br>
+                        }<br>
+                        else if(la seconde condition)<br>
+                        {<br>
+                        l'autre ordre à executer<br>
+                        }<br>
+                        else(comme les autres conditions sont fausse alors)<br>
+                        {<br>
+                        execute ce code<br>
+                        }</p>
+                </div>
+
+                    <p>On peut inbriquer une condition dans une condition. Prenons l'exemple d'une limitatin de vitesse à 80km/h, pour qu'un message s'affiche sur votre tableau de bord, le programme va devoir s'interroger, afin d'afficher le bon message, si je roule à 80 ou un peu moins il me m'affichera "Tu roule à la bonne vitesse", si ma vitesse est inférieur à 50 par contre il va m'afficher "Acceleres un petit peu", ou si je roule à moins de 100km/h (donc entre 80 et 100) il affichera "Il faut que tu rallentisse un petit peu", et enfin si aucune de ces valeur n'est vrai (c'est donc que je roule forcement à plus de 100) alors il affichera "Tu roules beaucoup trop vite, c'est dangereux!".</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var speed = 110 (l'indication du compteur)<br><br>
+
+                        if(speed&lsaquo;80)<br>
+                        {<br>
+                            if(speed&lsaquo;50)<br>
+                                {<br>
+                                    console.log("Acceleres un petit peu");<br>
+                                }<br>
+                                else<br>
+                                {<br>
+                                    console.log("Tu roule à la bonne vitesse");<br>
+                                }<br>
+                        }<br>
+                        else if(speed&lsaquo;100)<br>
+                        {<br>
+                            console.log("Il faut que tu ralentisse un petit peu");<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            console.log("Tu roule beaucoup trop vite, c'est dangereux!");<br>
+                        }</p>
+                </div><br>
+
+                <h3>Le switch</h3>
+
+                    <p>L'instruction <mark>switch</mark> commence par évaluer l'expression fournie (cette évaluation ne se produit qu'une fois). Si une correspondance est trouvée, le programme exécutera les instructions associées. Si plusieurs cas de figure correspondent, le premier sera sélectionné (même si les cas sont différents les uns des autres). Le programme recherche tout d'abord une clause <mark>case</mark> dont l'expression est évaluée avec la même valeur que l'expression d'entrée (au sens de l'égalité stricte). Si une telle clause est trouvée, les instructions associées sont exécutées. Si aucune case n'est trouvée, le programme recherche la case optionnelle <mark>default</mark> et si elle existe, les instructions correspondantes sont exécutées. Si cette case optionnelle n'est pas utilisée, le programme continue son exécution après l'instruction switch. L'instruction <mark>break</mark> peut optionnellement être utilisée pour chaque case et permet de s'assurer que seules les instructions associées à ce cas seront exécutées. Si on omet une instruction break, le script exécutera les instructions pour le cas correspondant et aussi celles pour les cas suivants jusqu'à la fin de l'instruction switch ou jusqu'à une instruction break.<br>Voici la syntaxe du switch.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>switch(expression)<br>
+                            {<br>case1:<br>
+                            instructions1;<br>
+                            break;<br>
+                            case2:<br>
+                            instructions2;<br>
+                            break;<br>
+                            default:<br>
+                            intructions_def;<br>
+                        }</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="sixe-party">
+            <div class="wrapper">
+                <h2>Les boucles (loop)</h2>
+
+                    <p>Les boucles permettent de répéter des actions simplement et rapidement. Il y a différents types de boucles mais elles se ressemblent toutes au sens où elles répètent une action un certain nombre de fois (ce nombre peut éventuellement être zéro). Les différents types de boucles permettent d'utiliser différentes façon de commencer et de terminer une boucle. Chaque type de boucle pourra être utilisé en fonction de la situation et du problème que l'on cherche à résoudre.</p>
+
+                <h3>While (tant que) :</h3>
+
+                    <p>L'instruction <mark>while</mark> permet de créer une boucle qui s'exécute <mark>tant qu</mark>'une condition de test est vérifiée. La condition est évaluée avant d'exécuter l'instruction contenue dans la boucle. Une expression qui est évaluée avant chaque passage dans la boucle. Si cette expression est évaluée à vrai, instruction est exécutée. Si la condition n'est pas vérifiée, l'instruction n'est pas exécutée et le contrôle passe directement à l'instruction suivant la boucle.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>while (condition)<br>
+                    {<br>
+                    instructions<br>
+                    }</p>
+                </div><br>
+
+                <h3>Do...while (faire...tant que) :</h3>
+
+                    <p>L'instruction <mark>do...while</mark> permet de répéter un ensemble d'instructions jusqu'à ce qu'une condition donnée ne soit plus vérifiée. L'instruction est exécutée au moins une fois avant que la condition soit vérifiée. Quand la condition n'est plus vérifiée (vaut false ou une valeur équivalente), l'exécution de l'instruction do...while est stoppée et le contrôle passe à l'instruction suivante.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>do<br>
+                    {<br>
+                    intructions<br>
+                    }<br>
+                    while (condition)</p>
+                </div><br>
+
+                <h3>For (pour) :</h3>
+
+                    <p>L'instruction <mark>for</mark> crée une boucle composée de trois expressions optionnelles séparées par des points-virgules et encadrées entre des parenthèses qui sont suivies par une instruction à exécuter dans la boucle.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>for(initialisation; condition; expression final)<br>
+                    {<br>
+                    intructions<br>
+                    }</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="seven-party">
+            <div class="wrapper">
+                <h2>Les fonctions</h2>
+
+                    <p>Une fonction est composée d'une suite d'instructions qui forment le corps de la fonction. Il est parfois possible de passer des valeurs à une fonction et une fonction peut éventuellement retourner (return) une valeur.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>function name(parameter1, parameter2, etc...)<br>
+                    {<br>
+                    code à executer;<br>
+                    return result;<br>
+                    }</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="height-party">
+            <div class="wrapper">
+                <h2>Les arrays (les tableaux)</h2>
+
+                    <p>L'objet global <mark>Array</mark> est utilisé pour créer des tableaux. Les tableaux sont des objets qui servent de liste et possèdent plusieurs méthodes incorporées pour exécuter des opérations de parcours et de modification. Ni la taille d'un tableau ni le types de ses éléments n'est fixé. Puisque la dimension d'un tableau peut augmenter ou diminuer à tout moment. La numérotation des valeurs toujours à partir de zéro.</p>
+
+                <h3>Créer un tableau</h3>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var name = [value0, value1, value2];<br><br>
+                    var fruits = ["Pomme", "Banane", "Orange"];</p>
+                </div>
+
+                    <p>Les tableaux peuvent être stockés dans des variables et traités de la même manière que tout autre type de valeur, la différence étant que nous pouvons accéder à chaque valeur du tableau individuellement ou en groupe, il est possible d'afficher le nombre de valeur contenu dans la tableau avec <mark>length</mark> ou d'afficher le contenu du tableau lui même comme n'importe quels variable.</p>
+
+                <h3>Afficher les valeurs du tableau</h3>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var fruits = ["Pomme", "Banane", "Orange", "Citron"];<br><br>
+                    for(var i = 0; i &lsaquo; fruits.length; i++)<br>
+                    {<br>
+                    console.log(fruits[i]);<br>
+                    }</p>
+                </div>
+
+                    <p>Cette exemple ce lit ainsi :<br><br>
+                    Voici mon tableau "fruits";<br>
+                    Pour une variable i qui sera égale à zéro; tant que i est inférieur à la longueur de mon tableau "fruits"; alors fait i + 1<br>
+                    Maintenant affiche la valeur i de mon tableau.<br>
+                    Et la chaque valeur de mon tableau s'affichera dans la console les unes en desous des autres.</p>
+
+                <h3>Rajouter une ou des valeurs au tableau</h3>
+
+                    <p>Afin de rajouter une valeur à un tableau on va utiliser <mark>push</mark>.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>fruits.push("kiwi");<br>
+                    Et kiwi ce rajoutera a la suite de notre tableau.</p>
+                </div><br>
+
+                <h3>Enlever la dernière valeurs du tableau</h3>
+
+                    <p>Afin d'enlever la dernière valeur du tableau on va utiliser <mark>pop</mark> mais cette fois sans valeur.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>fruits.pop();<br>
+                    Et kiwi sera enlevé de notre tableau.</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+            </div>
+        </section>
+
+        <section id="nine-party">
+            <div class="wrapper">
+                <h2>Les objets</h2>
+
+                    <p>Un objet est un concept, une idée ou une chose. Un objet possède une structure qui lui permet de pouvoir fonctionner et d'interagir avec d'autres objets. Le JavaScript met à notre disposition des objets natifs, c'est-à-dire des objets directement utilisables. Vous avez déjà manipulé de tels objets sans le savoir : un nombre, une chaîne de caractères ou même un booléen.</p>
+
+                <h4>Exemples :</h4>
+
+                <div class="exemple-html">
+                    <p>var object = {<br>
+                    propertyName1: propertyValue1,<br>
+                    propertyName2: propertyValue2,<br>
+                    };</p>
+                </div>
+
+                <a id="haut" href="#header">&uarr;</a><br><br>
+             </div>
+        </section>
+    </section>
+
+        
+<footer class="container-fluid">
+    <h1></h1>
+        <div class="copyright">
+            Copyright © Tous droits réservés.
+        </div>
+</footer>
+            
+</body>
+    
+</html>

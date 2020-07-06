@@ -1,0 +1,54 @@
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*TITRE*/
+
+.Title h1{
+    text-align: center; 
+    font-size: 100px; 
+    font-family: Aclonica, sans-serif; 
+    background-image: url(https://medias.liberation.fr/photo/1263354-une.jpg?modified_at=1571848668&width=960);
+    color: black; 
+    text-shadow: 2px 0 0 #d60, 2px 2px 0 #d60, 0 2px 0 #d60, -2px 2px 0 #d60, -2px 0 0 #d60, -2px -2px 0 #d60, 0 -2px 0 #d60, 2px -2px 0 #d60;
+    border: 5px dashed brown;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+/*BODY*/
+
+body{
+    background-image: url(https://images.theoutbound.com/contents/117224/assets/1488751387426?&fit=crop&w=970&h=550&auto=format&dpr=2&q=60)
+}
+
+
+
+/* FOOTER */
+
+footer{
+    height: 180px;
+    background-color: chocolate;
+    border: 2px solid brown;
+    
+}
+footer h1{
+    color: #fff;
+    font-family: Acme, sans-serif;
+    font-size: 80px;
+    text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+    text-align: center;
+    padding-top: 20px;
+}
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    text-shadow: 1px 0 #000;
+    color: darkolivegreen;
+}
